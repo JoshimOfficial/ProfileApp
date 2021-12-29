@@ -43,6 +43,9 @@ let css_text = document.querySelector(".css_text");
 let js_text = document.querySelector(".js_text");
 let php_text = document.querySelector(".php_text");
 let experience_bio = document.querySelector(".experience_bio");
+let achive_bio = document.querySelector(".achive_bio");
+let achive_table = document.querySelector(".achive_table");
+let achive_bio_text = document.querySelector(".achive_bio_text");
 
 
 //This for When body loaded then every thing will set opacity to 1
@@ -96,7 +99,7 @@ about.addEventListener("click", (e)=> {
     quotes_four.style.opacity = "0"
     experience_bio_text.style.opacity = "0"
     experience_bio.style.opacity = "0"
-   
+    achive_bio.style.opacity = "0"
 })
 
 
@@ -117,6 +120,7 @@ education.addEventListener("click", (e)=> {
     quotes_four.style.opacity = "0"
     experience_bio_text.style.opacity = "0"
     experience_bio.style.opacity = "0"
+    achive_bio.style.opacity = "0"
 })
 
 
@@ -149,6 +153,7 @@ experience.addEventListener("click", (e)=> {
     table_cv.style.opacity = "0"
     experience_bio_text.style.opacity = "1"
     about_text.style.opacity = "0"
+    achive_bio.style.opacity = "0"
 })
 
 
@@ -168,8 +173,27 @@ achievement.addEventListener("click", ()=> {
     experience_bio_text.style.opacity = "0"
     about_bio.style.opacity = "0"
     experience_bio.style.opacity = "0"
+    education_bio.style.opacity ="0";
+    table_cv.style.opacity = "0"
+    achive_bio_text.style.opacity  ="1"
+    achive_bio.style.opacity = "1"
+
+    
+
 
 })
+
+achievement.addEventListener("click", ()=> {
+    setTimeout(achive_table_set_timer, 600)
+
+function achive_table_set_timer() {
+    achive_table.style.opacity = "1";
+}
+})
+
+
+
+
 
 
 //When user click on level button then all "level" will be show 
@@ -187,6 +211,7 @@ level.addEventListener("click", ()=> {
     quotes_four.style.opacity = "0"
     experience_bio_text.style.opacity = "0"
     experience_bio.style.opacity = "0"
+    achive_bio.style.opacity = "0"
 })
 
 
@@ -240,8 +265,6 @@ experience.addEventListener("click", ()=> {
     experience_bio.style.opacity = "1";
   setTimeout(exp_chart_text_timer, 500) 
   function exp_chart_text_timer() {
-  
-    experience_bio_chart.style.opacity = "1";
     slowmo_html_graph.style.animation = "html_graph_color_ani 2s linear";
     html_graph.style.opacity = "1";
     html_persent.style.opacity = "1";
@@ -300,5 +323,12 @@ experience.addEventListener("click", ()=> {
     function stopslo_php() {
         slowmo_php_graph.style.animation  = "";
         slowmo_php_graph.style.width = "450px"
+    }
+})
+
+experience.addEventListener("click", ()=> {
+    setTimeout( experience_bio_chart_set_time, 800)
+    function experience_bio_chart_set_time() {
+        experience_bio_chart.style.opacity = "1";
     }
 })
