@@ -489,3 +489,29 @@ th, td {
     top: 299px;
     left: 80px;
 }
+
+.achive_bio {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    transition: 1s;
+}
+
+.achive_table {
+    background: #ebeff7;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    top: 100px;
+    left: 20px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.achive_tabile_data {
+    width: 550px;
+}
+ .achive_bio_text {
+     transition: 1s;
+     opacity: 0;
+ }
