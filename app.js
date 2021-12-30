@@ -354,4 +354,3 @@ function getFullscreenElement() {
     toggleFullscreen();
  });
 
-aleart("Fullscreen available")
