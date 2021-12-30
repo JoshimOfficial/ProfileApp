@@ -353,4 +353,4 @@ function getFullscreenElement() {
  document.addEventListener('dblclick', () => {
     toggleFullscreen();
  });
-
+console.log("Fullscreen avialable")
