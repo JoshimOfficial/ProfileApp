@@ -35,6 +35,7 @@ body {
     height: 100%;
     left: 6px;
     top: -5%;
+    pointer-events: none;
 }
 
 .face_popup {
@@ -488,18 +489,22 @@ th, td {
 .achive_bio {
     position: absolute;
     top: 0px;
-    height: 100%;
+    height: 90%;
     transition: 1s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 20px;
 }
 
 .achive_table {
     background: #ebeff7;
-    position: absolute;
     padding: 20px;
     border-radius: 10px;
     top: 100px;
     left: 20px;
     transition: 1s;
+    font-size: 17px;
     opacity: 0;
 }
 
@@ -517,7 +522,6 @@ th, td {
     border-radius: 10px;
     width: 630px;
     transition: 1s;
-    position: relative;
     box-shadow: 5px 5px 4px #ededed, -5px -5px 4px #ededed;
     top: -5%;
     transition: 1s;
@@ -656,6 +660,7 @@ th, td {
  .social_bio_text{
      opacity: 0;
      transition: 1s;
+     font-size: 20px;
  }
 
  a:link, a:visited,  a:hover, a:active
